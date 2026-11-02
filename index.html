@@ -1,0 +1,1105 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rio Algifar Photography — Jasa Photoshoot &amp; Foto Brand</title>
+<meta name="description" content="Jasa photoshoot profesional: photoshoot biasa & foto brand produk. Booking via WhatsApp 0812-2119-8382.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='bold' fill='%23fff' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#050505; --card:#141414; --line:rgba(255,255,255,.10);
+    --txt:#e5e5e5; --muted:#a3a3a3; --dim:#737373;
+    --grad-text:linear-gradient(90deg,#fff 0%,#d4d4d4 45%,#8a8a8a 100%);
+    --grad-btn:linear-gradient(90deg,#fff 0%,#e5e5e5 50%,#bfbfbf 100%);
+    --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:84px}
+  body{background:var(--bg);color:var(--txt);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body.menu-open{overflow:hidden}
+  img{display:block}
+  a{text-decoration:none;color:inherit}
+  ul{list-style:none}
+  section{scroll-margin-top:84px}
+  .wrap{max-width:1152px;margin:0 auto;padding:0 20px}
+  .grad{background:var(--grad-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .serif{font-family:var(--serif)}
+  .eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);font-weight:500}
+  @media(min-width:768px){.eyebrow{font-size:14px}}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto}
+  .sec-head h2{font-family:var(--serif);font-size:clamp(1.9rem,4.5vw,3rem);font-weight:700;margin-top:12px;line-height:1.2;color:#fff}
+  .sec-head p{margin-top:16px;color:var(--muted);font-size:15px}
+  @media(min-width:768px){.sec-head p{font-size:16px}}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:14px 32px;font-size:14px;font-weight:600;cursor:pointer;transition:transform .3s ease,background .3s ease;border:none;font-family:var(--sans)}
+  @media(min-width:768px){.btn{font-size:16px}}
+  .btn-white{background:var(--grad-btn);color:#000;box-shadow:0 0 40px rgba(255,255,255,.15)}
+  .btn-white:hover{transform:scale(1.05)}
+  .btn-white:active{transform:scale(.96)}
+  .btn-ghost{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.05);color:#fff;backdrop-filter:blur(6px);font-weight:500}
+  .btn-ghost:hover{background:rgba(255,255,255,.15)}
+  .ic{width:18px;height:18px;flex-shrink:0}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+  .reveal.in-view{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{transition:none;opacity:1;transform:none}}
+
+  /* ============ NAVBAR ============ */
+  header{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .35s ease,border-color .35s ease;border-bottom:1px solid transparent}
+  header.scrolled{background:rgba(5,5,5,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+  .nav-inner{max-width:1152px;margin:0 auto;padding:0 20px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{font-family:var(--serif);font-size:19px;font-weight:700;letter-spacing:.02em;color:#fff;white-space:nowrap}
+  .brand span{background:linear-gradient(90deg,#a3a3a3,#5c5c5c);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .nav-links{display:flex;align-items:center;gap:28px}
+  .nav-links a{font-size:14px;color:var(--muted);transition:color .25s}
+  .nav-links a:hover{color:#fff}
+  .nav-cta{display:inline-flex;border-radius:999px;background:var(--grad-btn);color:#000;font-size:13px;font-weight:600;padding:9px 20px;transition:transform .3s}
+  .nav-cta:hover{transform:scale(1.05)}
+  .hamburger{display:none;width:42px;height:42px;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:10px;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+  .hamburger span{display:block;width:18px;height:2px;background:#fff;border-radius:2px;transition:transform .3s ease,opacity .3s ease}
+  .hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .hamburger.active span:nth-child(2){opacity:0}
+  .hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  @media(max-width:900px){
+    .hamburger{display:flex}
+    .nav-cta{display:none}
+    .nav-links{position:fixed;top:0;left:0;right:0;z-index:-1;flex-direction:column;align-items:stretch;gap:6px;background:rgba(5,5,5,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);padding:88px 24px 28px;transform:translateY(-102%);visibility:hidden;transition:transform .38s ease,visibility .38s}
+    .nav-links.open{transform:translateY(0);visibility:visible}
+    .nav-links a{font-size:16px;padding:11px 12px;border-radius:10px}
+    .nav-links a:hover{background:rgba(255,255,255,.06)}
+    .nav-links .m-cta{margin-top:12px;display:flex;justify-content:center;background:var(--grad-btn);color:#000;font-weight:600;border-radius:999px;padding:13px}
+  }
+  @media(min-width:901px){.nav-links .m-cta{display:none}}
+
+  /* ============ HERO ============ */
+  .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(1)}
+  .hero-veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.4) 45%,#050505 100%)}
+  .hero-veil2{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.7) 0%,transparent 50%,rgba(0,0,0,.7) 100%)}
+  .hero-in{position:relative;z-index:2;max-width:896px;padding:120px 20px 90px;text-align:center}
+  .hero-badge{display:inline-block;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.05);backdrop-filter:blur(6px);border-radius:999px;padding:7px 20px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#d4d4d4}
+  @media(min-width:768px){.hero-badge{font-size:13px}}
+  .hero h1{font-family:var(--serif);font-size:clamp(2.4rem,7vw,4.4rem);font-weight:700;line-height:1.12;margin-top:24px;color:#fff}
+  .hero-sub{margin:24px auto 0;max-width:640px;color:#d4d4d4;font-size:15px;line-height:1.7}
+  @media(min-width:768px){.hero-sub{font-size:17px}}
+  .hero-cta{margin-top:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+  @media(min-width:640px){.hero-cta{flex-direction:row}}
+  .hero-cta .btn{width:100%}
+  @media(min-width:640px){.hero-cta .btn{width:auto}}
+  .scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:#8a8a8a;animation:bob 1.9s ease-in-out infinite}
+  .scroll-hint:hover{color:#fff}
+  @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,9px)}}
+
+  /* ============ MARQUEE / GALERI BERJALAN ============ */
+  #hasil-foto{padding:88px 0;background:linear-gradient(180deg,#000 0%,#0a0a0a 50%,#000 100%);overflow:hidden}
+  @media(min-width:768px){#hasil-foto{padding:110px 0}}
+  .marquee{position:relative;overflow:hidden;padding:4px 0}
+  .marquee::before,.marquee::after{content:"";position:absolute;top:0;bottom:0;width:64px;z-index:5;pointer-events:none}
+  .marquee::before{left:0;background:linear-gradient(90deg,#030303,transparent)}
+  .marquee::after{right:0;background:linear-gradient(270deg,#030303,transparent)}
+  @media(min-width:768px){.marquee::before,.marquee::after{width:110px}}
+  .marquee-track{display:flex;width:max-content}
+  .marquee-track.left{animation:slide-left 46s linear infinite}
+  .marquee-track.right{animation:slide-right 46s linear infinite}
+  .marquee:hover .marquee-track{animation-play-state:paused}
+  @keyframes slide-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes slide-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+  @media(prefers-reduced-motion:reduce){.marquee-track{animation:none!important}}
+  .m-group{display:flex;gap:16px;padding-right:16px}
+  @media(min-width:768px){.m-group{gap:20px;padding-right:20px}}
+  .m-item{position:relative;flex-shrink:0;width:160px;height:210px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#171717}
+  @media(min-width:640px){.m-item{width:192px;height:256px}}
+  @media(min-width:768px){.m-item{width:240px;height:320px}}
+  .m-item img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:transform .7s ease}
+  .m-item:hover img{transform:scale(1.07)}
+  .ph-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.08) 45%,transparent 70%);pointer-events:none}
+  .m-item figcaption,.g-item figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px}
+  .chip{display:inline-block;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.10);backdrop-filter:blur(4px);border-radius:999px;padding:2px 10px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#e5e5e5}
+  @media(min-width:768px){.chip{font-size:11px}}
+  .ph-title{margin-top:7px;font-family:var(--serif);font-weight:600;font-size:14px;color:#fff}
+  @media(min-width:768px){.ph-title{font-size:16px}}
+
+  /* ============ GALERI LENGKAP ============ */
+  .galeri-label{text-align:center;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);margin-top:64px}
+  @media(min-width:768px){.galeri-label{font-size:14px;margin-top:80px}}
+  .galeri{margin-top:34px;display:grid;grid-template-columns:1fr;gap:18px}
+  @media(min-width:640px){.galeri{grid-template-columns:repeat(2,1fr);grid-auto-flow:dense}}
+  @media(min-width:1024px){.galeri{grid-template-columns:repeat(3,1fr)}}
+  .g-item{position:relative;overflow:hidden;border-radius:18px;border:1px solid var(--line);background:#171717;aspect-ratio:3/4;margin:0}
+  @media(min-width:640px){.g-item.tall{grid-row:span 2;aspect-ratio:auto}}
+  .g-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:transform .7s ease}
+  .g-item:hover img{transform:scale(1.06)}
+  .g-item .ph-overlay{opacity:.75;transition:opacity .5s}
+  .g-item:hover .ph-overlay{opacity:.95}
+  .g-item figcaption{padding:20px;transform:translateY(8px);transition:transform .5s ease}
+  .g-item:hover figcaption{transform:translateY(0)}
+  .g-title{margin-top:9px;font-family:var(--serif);font-weight:600;font-size:18px;color:#fff}
+  @media(min-width:768px){.g-title{font-size:20px}}
+  .ig-cta{text-align:center;margin-top:44px}
+
+  /* ============ LAYANAN ============ */
+  #layanan{padding:88px 0;background:#050505}
+  @media(min-width:768px){#layanan{padding:110px 0}}
+  .services{margin-top:48px;max-width:896px;margin-left:auto;margin-right:auto;display:grid;gap:20px;grid-template-columns:1fr}
+  @media(min-width:768px){.services{grid-template-columns:repeat(2,1fr);margin-top:56px}}
+  .card{position:relative;overflow:hidden;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg,#161616 0%,#0b0b0b 55%,#000 100%);padding:28px;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+  @media(min-width:768px){.card{padding:34px}}
+  .card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.3);box-shadow:0 22px 60px rgba(255,255,255,.06)}
+  .card::after{content:"";position:absolute;top:-44px;right:-44px;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.10),transparent 70%);opacity:0;transition:opacity .5s;pointer-events:none}
+  .card:hover::after{opacity:1}
+  .card-icon{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:13px;background:var(--grad-btn);color:#000}
+  .card-icon svg{width:22px;height:22px}
+  .card h3{margin-top:20px;font-family:var(--serif);font-size:21px;font-weight:600;color:#fff}
+  @media(min-width:768px){.card h3{font-size:24px}}
+  .card>p{margin-top:12px;font-size:14px;color:var(--muted);line-height:1.7}
+  .card ul{margin-top:20px;display:flex;flex-direction:column;gap:11px}
+  .card li{display:flex;align-items:center;gap:11px;font-size:14px;color:#d4d4d4}
+  .check{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.10)}
+  .check svg{width:12px;height:12px;color:#fff}
+
+  /* ============ TENTANG ============ */
+  #tentang{padding:88px 0;background:#050505}
+  @media(min-width:768px){#tentang{padding:110px 0}}
+  .about-grid{display:grid;gap:40px;align-items:center;grid-template-columns:1fr}
+  @media(min-width:1024px){.about-grid{grid-template-columns:repeat(2,1fr);gap:64px}}
+  .about-photo{position:relative;max-width:440px;width:100%;margin:0 auto}
+  @media(min-width:1024px){.about-photo{max-width:none}}
+  .about-photo::before{content:"";position:absolute;inset:-12px;border-radius:26px;background:linear-gradient(135deg,rgba(255,255,255,.15),transparent 45%,rgba(115,115,115,.22));filter:blur(5px)}
+  .about-photo .ph{position:relative;aspect-ratio:4/5;border-radius:24px;overflow:hidden;border:1px solid var(--line)}
+  .about-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1)}
+  .about-photo .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent 45%)}
+  .about-txt .eyebrow{color:var(--dim)}
+  .about-txt h2{font-family:var(--serif);font-size:clamp(1.9rem,4.5vw,3rem);font-weight:700;line-height:1.18;margin-top:12px;color:#fff}
+  .about-txt p{margin-top:22px;font-size:15px;line-height:1.75}
+  .about-txt p.lead{color:#d4d4d4}
+  .about-txt p.rest{color:var(--muted)}
+  .stats{margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .stat{border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,#161616,#000);padding:16px 10px;text-align:center}
+  .stat svg{width:20px;height:20px;margin:0 auto;color:#d4d4d4}
+  .stat b{display:block;margin-top:8px;font-family:var(--serif);font-size:20px;font-weight:700;color:#fff}
+  @media(min-width:768px){.stat b{font-size:24px}}
+  .stat small{display:block;margin-top:4px;font-size:11px;color:var(--muted)}
+  @media(min-width:768px){.stat small{font-size:12px}}
+
+  /* ============ KONTAK ============ */
+  #kontak{padding:88px 0;background:linear-gradient(180deg,#000 0%,#0a0a0a 50%,#000 100%)}
+  @media(min-width:768px){#kontak{padding:110px 0}}
+  .contacts{margin-top:48px;display:grid;gap:20px;grid-template-columns:1fr}
+  @media(min-width:768px){.contacts{grid-template-columns:repeat(3,1fr);margin-top:52px}}
+  .c-card{position:relative;overflow:hidden;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg,#161616 0%,#0b0b0b 55%,#000 100%);padding:26px;display:block;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+  .c-card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.3);box-shadow:0 22px 60px rgba(255,255,255,.06)}
+  .c-card::after{content:"";position:absolute;left:-40px;bottom:-40px;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.10),transparent 70%);opacity:0;transition:opacity .5s;pointer-events:none}
+  .c-card:hover::after{opacity:1}
+  .c-card .card-icon{width:48px;height:48px}
+  .c-label{margin-top:20px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+  .c-value{margin-top:8px;font-family:var(--serif);font-size:19px;font-weight:600;color:#fff;word-break:break-all}
+  @media(min-width:768px){.c-value{font-size:21px}}
+  .c-note{margin-top:8px;font-size:13px;color:#8a8a8a}
+  .cta-banner{margin-top:48px;border-radius:26px;overflow:hidden;border:1px solid var(--line)}
+  .cta-in{position:relative;background:linear-gradient(90deg,#171717,#262626 50%,#171717);padding:44px 24px;text-align:center}
+  @media(min-width:768px){.cta-in{padding:60px 48px}}
+  .cta-in::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at top,rgba(255,255,255,.12),transparent 60%);pointer-events:none}
+  .cta-in h3{position:relative;font-family:var(--serif);font-size:clamp(1.6rem,4vw,2.5rem);font-weight:700;color:#fff}
+  .cta-in p{position:relative;margin:14px auto 0;max-width:480px;font-size:14px;color:#d4d4d4}
+  @media(min-width:768px){.cta-in p{font-size:16px}}
+  .cta-btns{position:relative;margin-top:30px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+  @media(min-width:640px){.cta-btns{flex-direction:row}}
+  .cta-btns .btn{width:100%}
+  @media(min-width:640px){.cta-btns .btn{width:auto}}
+  .cta-note{position:relative;margin-top:26px;display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--muted)}
+  .cta-note svg{width:16px;height:16px}
+
+  /* ============ FOOTER ============ */
+  footer{border-top:1px solid var(--line);background:#000}
+  .foot-top{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:30px;padding:44px 0}
+  @media(min-width:768px){.foot-top{flex-direction:row}}
+  .foot-brand{font-family:var(--serif);font-size:18px;font-weight:600;letter-spacing:.02em;color:#fff}
+  .foot-brand span{background:linear-gradient(90deg,#a3a3a3,#5c5c5c);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .foot-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 24px}
+  .foot-nav a{font-size:14px;color:var(--muted);transition:color .25s}
+  .foot-nav a:hover{color:#fff}
+  .foot-soc{display:flex;gap:12px}
+  .soc{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.15);color:#d4d4d4;transition:background .25s,color .25s}
+  .soc:hover{background:rgba(255,255,255,.1);color:#fff}
+  .soc svg{width:19px;height:19px}
+  .foot-bot{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid rgba(255,255,255,.05);padding:22px 0 30px;text-align:center}
+  @media(min-width:768px){.foot-bot{flex-direction:row;text-align:left}}
+  .foot-bot p{font-size:13px;color:#8a8a8a}
+
+  /* ============ TOMBOL WA MELAYANG ============ */
+  .wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:56px;height:56px;border-radius:50%;background:var(--grad-btn);color:#000;display:flex;align-items:center;justify-content:center;box-shadow:0 0 38px rgba(255,255,255,.28);transition:transform .3s ease}
+  .wa-float:hover{transform:scale(1.1)}
+  .wa-float svg{width:27px;height:27px}
+</style>
+<style>
+/* ============ KELOLA FOTO (Rio Photo Manager) ============ */
+.rio-toggle{position:fixed;left:18px;bottom:18px;z-index:1000;display:inline-flex;align-items:center;gap:9px;border:none;border-radius:999px;padding:13px 20px;background:linear-gradient(90deg,#fff 0%,#e5e5e5 50%,#bfbfbf 100%);color:#000;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:13px;font-weight:600;cursor:pointer;box-shadow:0 0 34px rgba(255,255,255,.22);transition:transform .3s ease}
+.rio-toggle:hover{transform:scale(1.06)}
+.rio-toggle svg{width:16px;height:16px}
+.rio-toolbar{position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:1001;display:none;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;width:max-content;max-width:calc(100vw - 16px);padding:10px 14px;border-radius:20px;border:1px solid rgba(255,255,255,.12);background:rgba(8,8,8,.95);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(0,0,0,.6)}
+body.rio-admin .rio-toolbar{display:flex}
+.rio-tb-title{font-size:12px;font-weight:700;color:#fff;letter-spacing:.05em;text-transform:uppercase;margin-right:2px}
+.rio-tb-hint{flex-basis:100%;text-align:center;font-size:11.5px;color:#a3a3a3;margin-top:2px}
+.rio-btn{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);color:#e5e5e5;border-radius:999px;padding:8px 14px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:12.5px;font-weight:600;cursor:pointer;transition:background .25s ease,transform .2s ease}
+.rio-btn:hover{background:rgba(255,255,255,.15)}
+.rio-btn:active{transform:scale(.97)}
+.rio-btn:disabled{opacity:.55;cursor:wait}
+.rio-btn-p{background:linear-gradient(90deg,#fff,#e5e5e5);color:#000;border-color:transparent}
+.rio-btn-p:hover{background:linear-gradient(90deg,#fff,#d4d4d4)}
+.rio-btn-d{color:#f87171;border-color:rgba(248,113,113,.35);background:rgba(248,113,113,.08)}
+.rio-btn-d:hover{background:rgba(248,113,113,.16)}
+body.rio-admin .m-item,body.rio-admin .g-item,body.rio-admin .about-photo .ph,body.rio-admin .hero-img{cursor:pointer}
+body.rio-admin .m-item,body.rio-admin .g-item{outline:2px dashed rgba(255,255,255,.45);outline-offset:4px}
+body.rio-admin .about-photo .ph{outline:2px dashed rgba(255,255,255,.45);outline-offset:4px}
+body.rio-admin .hero-img{outline:2px dashed rgba(255,255,255,.4);outline-offset:-8px}
+body.rio-admin .m-item:hover,body.rio-admin .g-item:hover{outline-color:#fff}
+body.rio-admin .m-item,body.rio-admin .g-item,body.rio-admin .about-photo,body.rio-admin .hero{-webkit-user-select:none;user-select:none}
+/* Saat mode kelola: hentikan galeri berjalan & sembunyikan salinannya supaya foto mudah diketuk */
+body.rio-admin .marquee-track{animation:none!important;transform:none!important}
+body.rio-admin .m-group[aria-hidden="true"]{display:none}
+.rio-overlay{position:fixed;inset:0;z-index:1004;background:rgba(0,0,0,.78);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:16px}
+.rio-overlay[hidden]{display:none}
+.rio-modal{width:min(430px,100%);max-height:min(86vh,760px);overflow:auto;background:#141414;border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:22px;box-shadow:0 30px 80px rgba(0,0,0,.7)}
+.rio-modal-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.rio-modal-head h3{font-family:"Playfair Display",Georgia,serif;font-size:20px;font-weight:600;color:#fff;margin:0}
+.rio-x{width:34px;height:34px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:#e5e5e5;font-size:14px;cursor:pointer}
+.rio-x:hover{background:rgba(255,255,255,.14)}
+.rio-preview{margin:16px 0 4px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:#0b0b0b;aspect-ratio:4/3}
+.rio-preview img{width:100%;height:100%;object-fit:cover;display:block}
+.rio-field{display:block;margin-top:14px;font-size:12px;color:#a3a3a3;letter-spacing:.04em}
+.rio-field input{margin-top:6px;width:100%;background:#0b0b0b;border:1px solid rgba(255,255,255,.15);color:#fff;border-radius:10px;padding:10px 12px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:14px}
+.rio-field input:focus{outline:none;border-color:rgba(255,255,255,.4)}
+.rio-check{display:flex;align-items:center;gap:9px;margin-top:14px;font-size:13px;color:#d4d4d4;cursor:pointer}
+.rio-check input{width:16px;height:16px;accent-color:#fff}
+.rio-actions{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+.rio-actions .rio-btn{justify-content:center;padding:12px 16px;font-size:13.5px;border-radius:12px}
+.rio-note{margin-top:16px;font-size:12px;line-height:1.6;color:#8a8a8a}
+.rio-note b{color:#d4d4d4}
+.rio-steps{margin:14px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:9px;font-size:13px;color:#d4d4d4;line-height:1.6}
+.rio-steps b{color:#fff}
+.rio-toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%);z-index:1006;max-width:calc(100vw - 32px);background:#171717;border:1px solid rgba(255,255,255,.16);color:#e5e5e5;border-radius:999px;padding:11px 18px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:13px;box-shadow:0 14px 40px rgba(0,0,0,.55);text-align:center}
+.rio-toast[hidden]{display:none}
+.rio-toast.rio-toast-high{bottom:auto;top:12px}
+@media(max-width:560px){.rio-btn{padding:7px 11px;font-size:11.5px}.rio-tb-title{flex-basis:100%;text-align:center;margin:0}}
+
+</style>
+</head>
+<body data-rio-pm-ver="v1">
+
+<!-- ================= NAVBAR ================= -->
+<header id="navbar">
+  <nav class="nav-inner" aria-label="Navigasi utama">
+    <a href="#beranda" class="brand">Rio Algifar <span>Photography</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#hasil-foto">Hasil Foto</a></li>
+      <li><a href="#layanan">Layanan</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+      <li><a class="m-cta" href="https://wa.me/6281221198382?text=Halo%20Rio%20Algifar%20Photography%2C%20saya%20ingin%20booking%20sesi%20photoshoot." target="_blank" rel="noopener noreferrer">Booking via WhatsApp</a></li>
+    </ul>
+    <a class="nav-cta" href="https://wa.me/6281221198382?text=Halo%20Rio%20Algifar%20Photography%2C%20saya%20ingin%20booking%20sesi%20photoshoot." target="_blank" rel="noopener noreferrer">Booking</a>
+    <div class="lang-switch" aria-label="Language"><button type="button" data-lang="id" class="active">ID</button><button type="button" data-lang="en">EN</button></div>
+    <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="beranda">
+  <img class="hero-img" src="rio.jpeg" alt="Foto portrait studio hitam putih dengan pencahayaan dramatis">
+  <div class="hero-veil"></div>
+  <div class="hero-veil2"></div>
+</section>
+
+<!-- ================= HASIL FOTO ================= -->
+<section id="hasil-foto">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Galeri</p>
+      <h2>Hasil <span class="grad">Foto</span></h2>
+      <p></p>
+    </div>
+  </div>
+
+  <!-- Galeri berjalan otomatis (arah kiri) -->
+  <div class="marquee" style="margin-top:48px">
+    <div class="marquee-track left">
+      <div class="m-group">
+        <figure class="m-item"><img src="s1.jpeg" alt="Hasil foto Photoshoot — Cahaya Samping"><div class="ph-overlay"></div><figcaption><span class="chip">Photoshoot</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="b1.jpeg" alt="Hasil foto Brand — Aroma Mewah"><div class="ph-overlay"></div><figcaption><span class="chip">Brand</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="b2.jpeg" alt="Hasil foto Brand — Secangkir Pagi"><div class="ph-overlay"></div><figcaption><span class="chip">Brand</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="b3.jpeg" alt="Hasil foto Brand — Kilau Jam Tangan"><div class="ph-overlay"></div><figcaption><span class="chip">Brand</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="s8.jpeg" alt="Hasil foto Photoshoot — Langkah Kota"><div class="ph-overlay"></div><figcaption><span class="chip">Photoshoot</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="s10.jpeg" alt="Hasil foto Photoshoot — Bayangan Wajah"><div class="ph-overlay"></div><figcaption><span class="chip">Photoshoot</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="s5.jpeg" alt="Hasil foto Photoshoot — Gerak yang Beku"><div class="ph-overlay"></div><figcaption><span class="chip">Photoshoot</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="s7.jpeg" alt="Hasil foto Photoshoot — Topi Fedora"><div class="ph-overlay"></div><figcaption><span class="chip">Photoshoot</span><p class="ph-title"></p></figcaption></figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- Galeri berjalan otomatis (arah kanan) -->
+  <div class="marquee" style="margin-top:20px">
+    <div class="marquee-track right">
+      <div class="m-group">
+        <figure class="m-item"><img src="b4.jpeg" alt="Hasil foto Brand — Sneaker Signature"><div class="ph-overlay"></div><figcaption><span class="chip">Brand</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="s5.jpeg" alt="Hasil foto Photoshoot — Percaya Diri"><div class="ph-overlay"></div><figcaption><span class="chip">Photoshoot</span><p class="ph-title">P</p></figcaption></figure>
+        <figure class="m-item"><img src="s1.jpeg" alt="Hasil foto Photoshoot — Gang Kota"><div class="ph-overlay"></div><figcaption><span class="chip">Photoshoot</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="b6.jpeg" alt="Hasil foto Brand — Tas Kulit"><div class="ph-overlay"></div><figcaption><span class="chip">Brand</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="b7.jpeg" alt="Hasil foto Brand — Kacamata Ikonik"><div class="ph-overlay"></div><figcaption><span class="chip">Brand</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="b8.jpeg" alt="Hasil foto Brand — Elemen Kulit"><div class="ph-overlay"></div><figcaption><span class="chip">Brand</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="b9.jpeg" alt="Hasil foto Brand — Kaos Klasik"><div class="ph-overlay"></div><figcaption><span class="chip">Brand</span><p class="ph-title"></p></figcaption></figure>
+        <figure class="m-item"><img src="b10.jpeg" alt="Hasil foto Brand — Suara Murni"><div class="ph-overlay"></div><figcaption><span class="chip">Brand</span><p class="ph-title"></p></figcaption></figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <p class="galeri-label reveal">Galeri Lengkap</p>
+    <div class="galeri">
+      <figure class="g-item tall reveal" style="--d:0.00s"><img src="s1.jpeg" alt="Hasil foto" loading="lazy"><div class="ph-overlay"></div><figcaption><span class="chip"></span><p class="g-title"></p></figcaption></figure>
+      <figure class="g-item reveal" style="--d:0.08s"><img src="s2.jpeg" alt="Hasil foto" loading="lazy"><div class="ph-overlay"></div><figcaption><span class="chip"></span><p class="g-title"></p></figcaption></figure>
+      <figure class="g-item reveal" style="--d:0.16s"><img src="s3.jpeg" alt="Hasil foto" loading="lazy"><div class="ph-overlay"></div><figcaption><span class="chip"></span><p class="g-title"></p></figcaption></figure>
+      <figure class="g-item reveal" style="--d:0.00s"><img src="s4.jpeg" alt="Hasil foto" loading="lazy"><div class="ph-overlay"></div><figcaption><span class="chip"></span><p class="g-title"></p></figcaption></figure>
+      <figure class="g-item reveal" style="--d:0.08s"><img src="s5.jpeg" alt="Hasil foto" loading="lazy"><div class="ph-overlay"></div><figcaption><span class="chip"></span><p class="g-title"></p></figcaption></figure>
+      <figure class="g-item tall reveal" style="--d:0.16s"><img src="s6.jpeg" alt="Hasil foto" loading="lazy"><div class="ph-overlay"></div><figcaption><span class="chip"></span><p class="g-title"></p></figcaption></figure>
+      <figure class="g-item reveal" style="--d:0.00s"><img src="s7.jpeg" alt="Hasil foto" loading="lazy"><div class="ph-overlay"></div><figcaption><span class="chip" ><p class="g-title"></p></figcaption></figure>
+      <figure class="g-item reveal" style="--d:0.08s"><img src="s8.jpeg" alt="Hasil foto"><div class="ph-overlay"></div><figcaption><span class="chip"></span><p class="g-title"></p></figcaption></figure>
+      <figure class="g-item reveal" style="--d:0.16s"><img src="s9.jpeg" alt="Hasil foto"><div class="ph-overlay"></div><figcaption><span class="chip"></span><p class="g-title"></p></figcaption></figure>
+      <figure class="g-item tall reveal" style="--d:0.00s"><img src="s10.jpeg" alt="Hasil foto"><div class="ph-overlay"></div><figcaption><span class="chip"></span><p class="g-title"></p></figcaption></figure>
+      <figure class="g-item reveal" style="--d:0.08s"><img src="b4.jpeg" alt="Hasil foto"><div class="ph-overlay"></div><figcaption><span class="chip"></span><p class="g-title"></p></figcaption></figure>
+      <figure class="g-item reveal" style="--d:0.16s"><img src="s1.jpeg" alt="Hasil foto"><div class="ph-overlay"></div><figcaption><span class="chip"></span><p class="g-title"></p></figcaption></figure>
+    </div>
+    <div class="ig-cta reveal">
+      <a class="btn btn-ghost" href="https://instagram.com/rioalgifar" target="_blank" rel="noopener noreferrer">Lihat Karya Lengkap di Instagram @rioalgifar</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LAYANAN ================= -->
+<section id="layanan">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Layanan Kami</p>
+      <h2><span class="grad"></span></h2>
+      <p></p>
+    </div>
+
+    <div class="services">
+      <article class="card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+        </div>
+        <h3>Photoshoot</h3>
+        <p></p>
+        <ul>
+        </ul>
+      </article>
+
+      <article class="card reveal" style="--d:.1s">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <h3>Foto Brand &amp; Produk</h3>
+        <p></p>
+        <ul>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TENTANG ================= -->
+<section id="tentang">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <div class="ph">
+          <img src="rio.jpeg" alt="Fotografer sedang beraksi mengambil foto dengan kamera profesional" loading="lazy">
+        </div>
+      </div>
+      <div class="about-txt">
+        <p class="eyebrow reveal">Tentang Saya</p>
+        <h2 class="reveal" style="--d:.05s">Halo, Saya <span class="grad">Rio Algifar</span></h2>
+        <p class="lead reveal" style="--d:.1s">Seorang fotografer yang percaya bahwa momen terbaik lahir dari kesiapan merasakan, bukan sekadar menekan tombol shutter. Dengan pendekatan dokumenter dan sentuhan fine art, saya merangkum cerita, emosi, dan karakter dalam setiap frame.</p>
+        <p class="rest reveal" style="--d:.15s">Spesialisasi saya adalah fotografi hitam putih dan monokrom — menghilangkan warna agar cahaya, komposisi, dan ekspresi berbicara lebih lantang. Baik sesi photoshoot personal maupun foto brand &amp; produk, setiap klien mendapat perhatian penuh dari konsep hingga hasil akhir.</p>
+        <div class="stats reveal" style="--d:.2s">
+          <div class="stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m14.31 8 5.74 9.94"/><path d="M9.69 8h11.48"/><path d="m7.38 12 5.74-9.94"/><path d="M9.69 16 3.95 6.06"/><path d="M14.31 16H2.83"/><path d="m16.62 12-5.74 9.94"/></svg>
+            <b>500+</b><small>Foto Dihasilkan</small>
+          </div>
+          <div class="stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <b>5 Tahun</b><small>Pengalaman</small>
+          </div>
+          <div class="stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            <b>100%</b><small>Dedikasi</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KONTAK ================= -->
+<section id="kontak">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Hubungi Saya</p>
+      <h2>Siap Membekaskan <span class="grad">Momennya?</span></h2>
+      <p>Ceritakan konsep dan tanggal yang kamu inginkan — konsultasi gratis, jawaban cepat.</p>
+    </div>
+
+    <div class="contacts">
+      <a class="c-card reveal" href="https://wa.me/6281221198382?text=Halo%20Rio%20Algifar%20Photography%2C%20saya%20ingin%20booking%20sesi%20photoshoot." target="_blank" rel="noopener noreferrer">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <p class="c-label">No. HP / WhatsApp</p>
+        <p class="c-value">0812-2119-8382</p>
+        <p class="c-note">Respon cepat via WhatsApp</p>
+      </a>
+
+      <a class="c-card reveal" style="--d:.1s" href="mailto:riolgifari1@gmail.com?subject=Booking%20Sesi%20Photoshoot">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <p class="c-label">Email</p>
+        <p class="c-value">riolgifari1@gmail.com</p>
+        <p class="c-note">Untuk penawaran &amp; kerja sama</p>
+      </a>
+
+      <a class="c-card reveal" style="--d:.2s" href="https://instagram.com/rioalgifar" target="_blank" rel="noopener noreferrer">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </div>
+        <p class="c-label">Instagram</p>
+        <p class="c-value">@rioalgifar</p>
+        <p class="c-note">Lihat karya &amp; behind the scene</p>
+      </a>
+    </div>
+
+    <div class="cta-banner reveal">
+      <div class="cta-in">
+        <h3>Booking Jadwal Photoshoot</h3>
+        <p></p>
+        <div class="cta-btns">
+          <a class="btn btn-white" href="https://wa.me/6281221198382?text=Halo%20Rio%20Algifar%20Photography%2C%20saya%20ingin%20booking%20sesi%20photoshoot." target="_blank" rel="noopener noreferrer">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+            Chat WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="tel:+6281221198382">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            0812-2119-8382
+          </a>
+        </div>
+        <p class="cta-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Melayani sesi studio &amp; lokasi luar ruangan
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="#beranda" class="foot-brand">Rio Algifar <span>Photography</span></a>
+      <nav class="foot-nav" aria-label="Navigasi footer">
+        <a href="#beranda">Beranda</a>
+        <a href="#hasil-foto">Hasil Foto</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <div class="foot-soc">
+        <a class="soc" href="https://wa.me/6281221198382?text=Halo%20Rio%20Algifar%20Photography%2C%20saya%20ingin%20booking%20sesi%20photoshoot." target="_blank" rel="noopener noreferrer" aria-label="Hubungi via WhatsApp 0812-2119-8382">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+        </a>
+        <a class="soc" href="mailto:riolgifari1@gmail.com?subject=Booking%20Sesi%20Photoshoot" aria-label="Kirim email ke riolgifari1@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a class="soc" href="https://instagram.com/rioalgifar" target="_blank" rel="noopener noreferrer" aria-label="Buka Instagram @rioalgifar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <p>© <span id="year">2025</span> Rio Algifar Photography. Seluruh hak cipta dilindungi.</p>
+      <p>0812-2119-8382 · riolgifari1@gmail.com · @rioalgifar</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Tombol WhatsApp melayang -->
+<a class="wa-float" href="https://wa.me/6281221198382?text=Halo%20Rio%20Algifar%20Photography%2C%20saya%20ingin%20booking%20sesi%20photoshoot." target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp 0812-2119-8382">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+/* Foto hilang -> tampilkan kotak abu-abu berisi nama file yang harus ditaruh */
+(function(){
+  'use strict';
+  document.addEventListener('error', function(e){
+    var img = e.target;
+    if (!img || img.tagName !== 'IMG' || img.getAttribute('data-rio-fb')) { return; }
+    img.setAttribute('data-rio-fb', '1');
+    var src = img.getAttribute('src') || '';
+    src = src.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800">'
+      + '<rect width="600" height="800" fill="#141414"/>'
+      + '<text x="300" y="368" fill="#737373" font-family="Arial,Helvetica,sans-serif" font-size="21" text-anchor="middle">Foto belum ada:</text>'
+      + '<text x="300" y="410" fill="#e5e5e5" font-family="Consolas,Menlo,monospace" font-size="22" font-weight="bold" text-anchor="middle">' + src + '</text>'
+      + '<text x="300" y="466" fill="#737373" font-family="Arial,Helvetica,sans-serif" font-size="17" text-anchor="middle">Taruh foto dengan nama itu di folder foto</text>'
+      + '</svg>';
+    img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }, true);
+})();
+</script>
+<script>
+  // Gandakan isi marquee agar loop berjalan mulus (hemat ukuran file)
+  document.querySelectorAll('.marquee-track').forEach(function(track){
+    var g = track.querySelector('.m-group');
+    var clone = g.cloneNode(true);
+    clone.setAttribute('aria-hidden', 'true');
+    track.appendChild(clone);
+  });
+
+  // Navbar berubah saat digulir
+  var header = document.getElementById('navbar');
+  function onScroll(){ header.classList.toggle('scrolled', window.scrollY > 24); }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Menu mobile
+  var burger = document.getElementById('hamburger');
+  var navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', function(){
+    var open = navLinks.classList.toggle('open');
+    burger.classList.toggle('active', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Tutup menu' : 'Buka menu');
+    document.body.classList.toggle('menu-open', open);
+  });
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      navLinks.classList.remove('open');
+      burger.classList.remove('active');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-open');
+    });
+  });
+
+  // Animasi muncul saat digulir
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // Tahun otomatis di footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<!-- ================= KELOLA FOTO (Rio Photo Manager) ================= -->
+<button class="rio-toggle" id="rioToggle" aria-pressed="false" title="Ganti / tambah foto">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+  <span id="rioToggleLabel">Kelola Foto</span>
+</button>
+
+<div class="rio-toolbar" id="rioToolbar" role="toolbar" aria-label="Kelola foto">
+  <span class="rio-tb-title">Mode Kelola Foto</span>
+  <button class="rio-btn rio-btn-p" id="rioAddBtn" title="Tambah foto baru ke galeri">+ Tambah Foto</button>
+  <button class="rio-btn rio-btn-p" id="rioSaveBtn" title="Unduh file website terbaru">Simpan ke File</button>
+  <button class="rio-btn" id="rioResetBtn" title="Kembalikan semua foto seperti awal">Foto Asli</button>
+  <button class="rio-btn" id="rioHelpBtn" title="Petunjuk penggunaan">Bantuan</button>
+  <span class="rio-tb-hint">Ketuk foto mana pun untuk mengganti, menghapus, atau mengubah judulnya.</span>
+</div>
+
+<input type="file" id="rioFile" accept="image/*" multiple hidden>
+
+<div class="rio-overlay" id="rioModal" hidden>
+  <div class="rio-modal" role="dialog" aria-modal="true" aria-labelledby="rioModalTitle">
+    <div class="rio-modal-head">
+      <h3 id="rioModalTitle">Edit Foto</h3>
+      <button class="rio-x" id="rioModalClose" aria-label="Tutup">&#10005;</button>
+    </div>
+    <div class="rio-preview"><img id="rioPrevImg" alt="Pratinjau foto"></div>
+    <label class="rio-field" id="rioChipField">Kategori (label kecil)
+      <input type="text" id="rioChip" maxlength="24" placeholder="mis. Photoshoot / Brand"></label>
+    <label class="rio-field" id="rioTitleField">Judul foto
+      <input type="text" id="rioTitle" maxlength="60" placeholder="mis. Cahaya Samping"></label>
+    <label class="rio-check" id="rioTallField"><input type="checkbox" id="rioTall"> Ukuran tinggi (mengisi 2 kotak di galeri)</label>
+    <div class="rio-actions">
+      <button class="rio-btn rio-btn-p" id="rioReplace">Ganti Foto dari Perangkat&hellip;</button>
+      <button class="rio-btn rio-btn-d" id="rioDelete">Hapus Foto Ini</button>
+    </div>
+    <p class="rio-note">Setelah selesai mengedit, jangan lupa klik <b>Simpan ke File</b> di bagian atas agar perubahan tersimpan permanen di file.</p>
+  </div>
+</div>
+
+<div class="rio-overlay" id="rioHelp" hidden>
+  <div class="rio-modal" role="dialog" aria-modal="true" aria-labelledby="rioHelpTitle">
+    <div class="rio-modal-head">
+      <h3 id="rioHelpTitle">Bantuan &mdash; Kelola Foto</h3>
+      <button class="rio-x" id="rioHelpClose" aria-label="Tutup">&#10005;</button>
+    </div>
+    <ol class="rio-steps">
+      <li><b>Cara termudah:</b> tanpa mode ini pun Anda bisa mengganti foto dengan menimpa file di folder <b>foto</b> (nama file sama) lalu refresh browser &mdash; panduan lengkap ada di file <b>CARA-GANTI-FOTO.html</b>.</li><li>Klik <b>Kelola Foto</b> (tombol kiri bawah) untuk masuk mode edit.</li>
+      <li><b>Mengganti foto:</b> ketuk foto yang ingin diganti &rarr; pilih <b>Ganti Foto dari Perangkat&hellip;</b> &rarr; pilih foto baru Anda.</li>
+      <li><b>Menambah foto:</b> klik <b>+ Tambah Foto</b> di bagian atas, lalu pilih satu atau beberapa foto sekaligus. Foto baru otomatis masuk ke Galeri Lengkap dan galeri berjalan.</li>
+      <li><b>Menghapus foto:</b> ketuk fotonya, lalu pilih <b>Hapus Foto Ini</b>.</li>
+      <li><b>Mengubah judul / kategori:</b> ketuk fotonya, lalu isi kolom Judul atau Kategori.</li>
+      <li><b>Menyimpan permanen:</b> klik <b>Simpan ke File</b> &rarr; file <b>rio-satu-file.html</b> akan terunduh: versi website dengan semua foto yang Anda pasang lewat browser ini menyatu jadi satu file, praktis dikirim ke orang lain.</li>
+      <li><b>Foto Asli</b> mengembalikan semua foto seperti kondisi awal file.</li>
+    </ol>
+    <p class="rio-note">Foto yang Anda pilih otomatis dipadatkan agar website tetap ringan &mdash; dan hasil &ldquo;Simpan ke File&rdquo; menjadi <b>satu file</b> yang bisa dibuka di mana saja tanpa internet (foto yang belum diganti lewat browser tetap diambil dari folder <b>foto</b>). Semakin banyak foto ditambahkan, semakin besar ukuran file-nya.</p>
+  </div>
+</div>
+
+<div class="rio-toast" id="rioToast" hidden></div>
+
+<script>
+/* ============================================================
+   RIO PHOTO MANAGER — kelola foto langsung dari browser
+   Ganti / tambah / hapus / beri judul foto, lalu "Simpan ke File"
+   ============================================================ */
+(function(){
+  'use strict';
+  if (window.__rioPM) { return; }
+  window.__rioPM = true;
+
+  var DRAFT_KEY = 'rio_foto_draft_v2';
+  var HEAD_COMMENT = "<!--\n  ============================================================\n  Rio Algifar Photography — Website Jasa Photoshoot & Foto Brand\n  ============================================================\n  VERSI FOLDER: semua foto disimpan sebagai file .jpg di folder\n  \"foto\" di samping file ini, supaya gampang diganti dengan foto\n  Anda sendiri tanpa mengedit kode sama sekali.\n\n  Cara pakai      : buka index.html (2x klik) — bisa tanpa internet.\n  GANTI FOTO      : 1) buka folder \"foto\"\n                    2) ganti fotonya dengan foto Anda, PAKAI NAMA\n                       FILE YANG SAMA (mis. galeri-01.jpg)\n                    3) refresh browser (kalau belum berubah: Ctrl+F5)\n  Panduan lengkap : buka file CARA-GANTI-FOTO.html\n  Cara edit teks  : buka index.html dengan Notepad / VS Code,\n                    ubah teksnya, simpan, lalu refresh browser.\n  Kelola Foto     : tombol kiri bawah di website — ganti, tambah,\n                    hapus, atau beri judul foto langsung dari\n                    browser, lalu klik \"Simpan ke File\" untuk\n                    mengunduh versi semua-foto-dalam-satu-file.\n  Kontak          : 0812-2119-8382 · riolgifari1@gmail.com · @rioalgifar\n-->\n";
+  var VER = document.body.getAttribute('data-rio-pm-ver') || 'v1';
+
+  /* ---------- util ---------- */
+  function $(s, r){ return (r || document).querySelector(s); }
+  function $$(s, r){ return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+  function esc(s){
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function txt(el){ return el ? el.textContent.replace(/\s+/g, ' ').trim() : ''; }
+  function el(html){
+    var t = document.createElement('template');
+    t.innerHTML = String(html).trim();
+    return t.content.firstElementChild;
+  }
+  function clone(o){ return JSON.parse(JSON.stringify(o)); }
+
+  /* ---------- elemen utama ---------- */
+  var heroImg  = $('.hero-img');
+  var aboutImg = $('.about-photo img');
+  var trackL   = $('.marquee-track.left');
+  var trackR   = $('.marquee-track.right');
+  var galeriEl = $('.galeri');
+  if (!heroImg || !aboutImg || !trackL || !trackR || !galeriEl) { return; }
+
+  /* ---------- status ---------- */
+  var model = null, original = null;
+  var admin = false, ctx = null, fileMode = 'replace';
+  var dirty = false, draftWarned = false;
+
+  /* ---------- baca kondisi DOM menjadi model ---------- */
+  function figItem(f, kind){
+    var img = f.querySelector('img');
+    return {
+      src: img.getAttribute('src') || '',
+      alt: img.getAttribute('alt') || '',
+      chip: txt(f.querySelector('.chip')),
+      title: txt(f.querySelector(kind === 'g' ? '.g-title' : '.ph-title'))
+    };
+  }
+  function capture(){
+    var m = {
+      hero:  { src: heroImg.getAttribute('src') || '', alt: heroImg.getAttribute('alt') || '' },
+      about: { src: aboutImg.getAttribute('src') || '', alt: aboutImg.getAttribute('alt') || '' },
+      left: [], right: [], galeri: []
+    };
+    $$('.m-item', $('.m-group', trackL)).forEach(function(f){ m.left.push(figItem(f, 'm')); });
+    $$('.m-item', $('.m-group', trackR)).forEach(function(f){ m.right.push(figItem(f, 'm')); });
+    $$('.g-item', galeriEl).forEach(function(f){
+      var it = figItem(f, 'g');
+      it.tall = f.classList.contains('tall');
+      it.d = f.style.getPropertyValue('--d') || '0s';
+      m.galeri.push(it);
+    });
+    return m;
+  }
+
+  /* ---------- render model menjadi DOM ---------- */
+  function mItemHTML(it){
+    return '<figure class="m-item">'
+      + '<img src="' + esc(it.src) + '" alt="' + esc(it.alt) + '">'
+      + '<div class="ph-overlay"></div>'
+      + '<figcaption><span class="chip">' + esc(it.chip) + '</span>'
+      + '<p class="ph-title">' + esc(it.title) + '</p></figcaption>'
+      + '</figure>';
+  }
+  function gItemHTML(it){
+    return '<figure class="g-item' + (it.tall ? ' tall' : '') + ' reveal" style="--d:' + esc(it.d || '0s') + '">'
+      + '<img src="' + esc(it.src) + '" alt="' + esc(it.alt) + '" loading="lazy">'
+      + '<div class="ph-overlay"></div>'
+      + '<figcaption><span class="chip">' + esc(it.chip) + '</span>'
+      + '<p class="g-title">' + esc(it.title) + '</p></figcaption>'
+      + '</figure>';
+  }
+  function renderTrack(track, items, single){
+    var g1 = el('<div class="m-group">' + items.map(mItemHTML).join('') + '</div>');
+    track.innerHTML = '';
+    track.appendChild(g1);
+    if (!single) {
+      var g2 = g1.cloneNode(true);
+      g2.setAttribute('aria-hidden', 'true');
+      track.appendChild(g2);
+    }
+  }
+  function observeReveal(nodes){
+    var obs = (typeof io !== 'undefined') ? io : null;
+    if (!obs) { return; }
+    nodes.forEach(function(n){
+      if (!n.classList.contains('in-view')) { try { obs.observe(n); } catch(e){} }
+    });
+  }
+  function renderGaleri(){
+    var frag = document.createDocumentFragment();
+    model.galeri.forEach(function(it){ frag.appendChild(el(gItemHTML(it))); });
+    galeriEl.innerHTML = '';
+    galeriEl.appendChild(frag);
+    observeReveal($$('.reveal', galeriEl));
+  }
+  function renderAll(single){
+    heroImg.setAttribute('src', model.hero.src);
+    heroImg.setAttribute('alt', model.hero.alt || '');
+    aboutImg.setAttribute('src', model.about.src);
+    aboutImg.setAttribute('alt', model.about.alt || '');
+    renderTrack(trackL, model.left, single);
+    renderTrack(trackR, model.right, single);
+    renderGaleri();
+  }
+
+  /* ---------- referensi UI ---------- */
+  var modal = $('#rioModal'), helpEl = $('#rioHelp'), toastEl = $('#rioToast');
+  var fileInput = $('#rioFile');
+  var prevImg = $('#rioPrevImg'), chipIn = $('#rioChip'), titleIn = $('#rioTitle'), tallIn = $('#rioTall');
+  var chipField = $('#rioChipField'), titleField = $('#rioTitleField'), tallField = $('#rioTallField');
+  var delBtn = $('#rioDelete');
+
+  /* ---------- toast ---------- */
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.hidden = false;
+    if (toastTimer) { clearTimeout(toastTimer); }
+    toastTimer = setTimeout(function(){ toastEl.hidden = true; }, 4500);
+  }
+
+  /* ---------- draf otomatis (tersimpan di browser perangkat ini) ---------- */
+  function saveDraft(){
+    try {
+      localStorage.setItem(DRAFT_KEY, JSON.stringify({ ver: VER, model: model }));
+    } catch(e) {
+      if (!draftWarned) {
+        draftWarned = true;
+        toast('Catatan otomatis di perangkat penuh — perubahan tetap aman setelah "Simpan ke File".');
+      }
+    }
+  }
+  function loadDraft(){
+    try {
+      var s = localStorage.getItem(DRAFT_KEY);
+      if (!s) { return null; }
+      var d = JSON.parse(s);
+      if (d && d.ver === VER && d.model) { return d.model; }
+      localStorage.removeItem(DRAFT_KEY);
+    } catch(e){}
+    return null;
+  }
+
+  /* ---------- mode kelola ---------- */
+  function setAdmin(on){
+    admin = on;
+    document.body.classList.toggle('rio-admin', on);
+    $('#rioToggle').setAttribute('aria-pressed', on ? 'true' : 'false');
+    $('#rioToggleLabel').textContent = on ? 'Selesai Kelola' : 'Kelola Foto';
+    if (!on) { closeModal(); helpEl.hidden = true; }
+  }
+  $('#rioToggle').addEventListener('click', function(){
+    setAdmin(!admin);
+    if (admin) { toast('Mode Kelola aktif — ketuk foto mana pun untuk mengedit.'); }
+  });
+
+  function ctxItem(){
+    if (!ctx) { return null; }
+    if (ctx.type === 'hero')  { return model.hero; }
+    if (ctx.type === 'about') { return model.about; }
+    return model[ctx.type][ctx.i] || null;
+  }
+
+  function openModal(c){
+    var it = ctxItem();
+    ctx = c;
+    it = ctxItem();
+    if (!it) { return; }
+    var isItem = (c.type === 'left' || c.type === 'right' || c.type === 'galeri');
+    $('#rioModalTitle').textContent =
+      c.type === 'hero'  ? 'Foto Latar (Beranda)' :
+      c.type === 'about' ? 'Foto Tentang Saya' : 'Edit Foto';
+    prevImg.setAttribute('src', it.src);
+    chipIn.value = it.chip || '';
+    titleIn.value = it.title || '';
+    tallIn.checked = !!it.tall;
+    chipField.style.display  = isItem ? '' : 'none';
+    titleField.style.display = isItem ? '' : 'none';
+    tallField.style.display  = (c.type === 'galeri') ? '' : 'none';
+    delBtn.style.display     = isItem ? '' : 'none';
+    modal.hidden = false;
+    toastEl.classList.add('rio-toast-high');
+  }
+  function closeModal(){
+    modal.hidden = true;
+    ctx = null;
+    toastEl.classList.remove('rio-toast-high');
+    if (dirty) { renderAll(false); saveDraft(); dirty = false; }
+  }
+
+  /* ketuk foto saat mode kelola (delegasi, tahan terhadap render ulang) */
+  document.addEventListener('click', function(e){
+    if (!admin) { return; }
+    var t = e.target;
+    if (t.closest('#rioToolbar') || t.closest('#rioToggle') ||
+        t.closest('.rio-overlay') || t.closest('.wa-float')) { return; }
+    var fig = t.closest('.g-item');
+    if (fig) {
+      var idx = $$('.g-item', galeriEl).indexOf(fig);
+      if (idx > -1) { openModal({ type: 'galeri', i: idx }); e.preventDefault(); }
+      return;
+    }
+    var mi = t.closest('.m-item');
+    if (mi) {
+      var track = mi.closest('.marquee-track');
+      var g = mi.closest('.m-group');
+      if (g && track && g === $('.m-group', track)) {
+        var i2 = $$('.m-item', g).indexOf(mi);
+        if (i2 > -1) { openModal({ type: (track === trackL ? 'left' : 'right'), i: i2 }); e.preventDefault(); }
+      }
+      return;
+    }
+    if (t.closest('.about-photo')) { openModal({ type: 'about' }); e.preventDefault(); return; }
+    if (t.closest('.hero') && !t.closest('.hero-in') && !t.closest('.scroll-hint')) {
+      openModal({ type: 'hero' }); e.preventDefault(); return;
+    }
+  }, true);
+
+  $('#rioModalClose').addEventListener('click', closeModal);
+  $('#rioHelpClose').addEventListener('click', function(){ helpEl.hidden = true; });
+  $('#rioHelpBtn').addEventListener('click', function(){ helpEl.hidden = false; });
+  modal.addEventListener('click', function(e){ if (e.target === modal) { closeModal(); } });
+  helpEl.addEventListener('click', function(e){ if (e.target === helpEl) { helpEl.hidden = true; } });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') { closeModal(); helpEl.hidden = true; }
+  });
+
+  /* ---------- edit judul / kategori / ukuran ---------- */
+  chipIn.addEventListener('input', function(){
+    var it = ctxItem();
+    if (it) { it.chip = chipIn.value; dirty = true; }
+  });
+  titleIn.addEventListener('input', function(){
+    var it = ctxItem();
+    if (it) { it.title = titleIn.value; dirty = true; }
+  });
+  tallIn.addEventListener('change', function(){
+    if (ctx && ctx.type === 'galeri') { model.galeri[ctx.i].tall = tallIn.checked; dirty = true; }
+  });
+
+  /* ---------- kompresi foto dari perangkat ---------- */
+  function compress(file, maxDim, quality){
+    return new Promise(function(res, rej){
+      var url = URL.createObjectURL(file);
+      var img = new Image();
+      img.onload = function(){
+        try {
+          var w = img.naturalWidth, h = img.naturalHeight;
+          if (!w || !h) { throw new Error('gambar kosong'); }
+          var s = Math.min(1, maxDim / Math.max(w, h));
+          var cw = Math.max(1, Math.round(w * s)), ch = Math.max(1, Math.round(h * s));
+          var c = document.createElement('canvas');
+          c.width = cw; c.height = ch;
+          var cx = c.getContext('2d');
+          cx.fillStyle = '#ffffff';
+          cx.fillRect(0, 0, cw, ch);
+          cx.drawImage(img, 0, 0, cw, ch);
+          URL.revokeObjectURL(url);
+          res(c.toDataURL('image/jpeg', quality));
+        } catch(err) { URL.revokeObjectURL(url); rej(err); }
+      };
+      img.onerror = function(){ URL.revokeObjectURL(url); rej(new Error('format tidak didukung')); };
+      img.src = url;
+    });
+  }
+
+  $('#rioReplace').addEventListener('click', function(){
+    fileMode = 'replace'; fileInput.multiple = false; fileInput.value = ''; fileInput.click();
+  });
+  $('#rioAddBtn').addEventListener('click', function(){
+    fileMode = 'add'; fileInput.multiple = true; fileInput.value = ''; fileInput.click();
+  });
+
+  fileInput.addEventListener('change', function(){
+    var files = Array.prototype.slice.call(fileInput.files || []);
+    if (!files.length) { return; }
+    var isBig = (fileMode === 'replace' && ctx && (ctx.type === 'hero' || ctx.type === 'about'));
+    var maxDim = isBig ? 1920 : 1600, q = isBig ? 0.85 : 0.82;
+    var btn = (fileMode === 'add') ? $('#rioAddBtn') : $('#rioReplace');
+    var old = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Memproses foto\u2026';
+    var p = Promise.resolve([]);
+    files.forEach(function(f){
+      p = p.then(function(arr){
+        return compress(f, maxDim, q).then(function(d){ arr.push(d); return arr; });
+      });
+    });
+    p.then(function(urls){
+      if (fileMode === 'add') {
+        urls.forEach(function(d){
+          var it = { src: d, alt: 'Foto baru', chip: 'Foto Baru', title: 'Foto Baru', tall: false, d: '0s' };
+          model.galeri.push(it);
+          model.left.push(clone(it));
+        });
+        dirty = false;
+        renderAll(false);
+        saveDraft();
+        toast(urls.length + ' foto ditambahkan. Ketuk foto barunya untuk memberi judul.');
+        var last = galeriEl.lastElementChild;
+        if (last && last.scrollIntoView) { last.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      } else if (ctx) {
+        var it = ctxItem();
+        if (it && urls[0]) {
+          it.src = urls[0];
+          if (ctx.type === 'hero')       { heroImg.setAttribute('src', it.src); }
+          else if (ctx.type === 'about') { aboutImg.setAttribute('src', it.src); }
+          else                           { renderAll(false); }
+          prevImg.setAttribute('src', it.src);
+          dirty = false;
+          saveDraft();
+          toast('Foto berhasil diganti.');
+        }
+      }
+    }).catch(function(){
+      alert('Maaf, foto tidak bisa diproses. Coba gunakan file foto JPG atau PNG.');
+    }).then(function(){
+      btn.disabled = false;
+      btn.textContent = old;
+      fileInput.value = '';
+    });
+  });
+
+  /* ---------- hapus foto ---------- */
+  delBtn.addEventListener('click', function(){
+    if (!ctx) { return; }
+    if (!confirm('Hapus foto ini dari website?')) { return; }
+    if (ctx.type === 'left' || ctx.type === 'right' || ctx.type === 'galeri') {
+      model[ctx.type].splice(ctx.i, 1);
+    }
+    ctx = null;
+    modal.hidden = true;
+    renderAll(false);
+    saveDraft();
+    toast('Foto dihapus.');
+  });
+
+  /* ---------- reset ke foto asli file ---------- */
+  $('#rioResetBtn').addEventListener('click', function(){
+    if (!confirm('Kembalikan semua foto seperti kondisi asli file ini? Perubahan yang belum di-"Simpan ke File" akan hilang.')) { return; }
+    model = clone(original);
+    renderAll(false);
+    try { localStorage.removeItem(DRAFT_KEY); } catch(e){}
+    toast('Semua foto sudah dikembalikan ke kondisi asli.');
+  });
+
+  /* ---------- simpan: unduh ulang seluruh website sebagai file ---------- */
+  $('#rioSaveBtn').addEventListener('click', function(){
+    var btn = this, old = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Menyimpan\u2026';
+    setTimeout(function(){
+      try {
+        closeModal();
+        var wasAdmin = admin;
+        if (wasAdmin) { setAdmin(false); }
+        toastEl.hidden = true;
+        VER = 'v' + Date.now();
+        document.body.setAttribute('data-rio-pm-ver', VER);
+        saveDraft();
+        renderAll(true); /* 1 grup per baris galeri berjalan agar file tetap ringan; salinan dibuat ulang otomatis saat file dibuka */
+        var html = '<!DOCTYPE html>\n' + HEAD_COMMENT + document.documentElement.outerHTML;
+        var blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+        var a = document.createElement('a');
+        var url = URL.createObjectURL(blob);
+        a.href = url;
+        a.download = 'rio-satu-file.html';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(function(){ URL.revokeObjectURL(url); }, 5000);
+        renderAll(false);
+        if (wasAdmin) { setAdmin(true); }
+        toast('Berhasil! File rio-satu-file.html yang baru sudah terunduh — pakai file baru itu ya.');
+      } catch(err) {
+        alert('Gagal menyimpan file: ' + (err && err.message ? err.message : err));
+      } finally {
+        btn.disabled = false;
+        btn.textContent = old;
+      }
+    }, 30);
+  });
+
+  /* ---------- mulai ---------- */
+  original = capture();
+  var dModel = loadDraft();
+  model = dModel ? dModel : clone(original);
+  renderAll(false);
+  if (dModel) {
+    setTimeout(function(){ toast('Perubahan foto terakhir dimuat otomatis dari perangkat ini.'); }, 700);
+  }
+})();
+
+</script>
+
+<script>
+(function(){
+const translations={
+"Beranda":"Home","Hasil Foto":"Portfolio","Layanan":"Services","Tentang":"About","Kontak":"Contact",
+"Booking via WhatsApp":"Book via WhatsApp","Booking":"Book Now","Galeri":"Gallery","Galeri Lengkap":"Full Gallery",
+"Layanan Kami":"Our Services","Foto Brand & Produk":"Brand & Product Photography","Tentang Saya":"About Me",
+"Halo, Saya ":"Hello, I'm ","Seorang fotografer yang percaya bahwa momen terbaik lahir dari kesiapan merasakan, bukan sekadar menekan tombol shutter. Dengan pendekatan dokumenter dan sentuhan fine art, saya merangkum cerita, emosi, dan karakter dalam setiap frame.":"A photographer who believes the best moments come from being ready to feel, not merely pressing the shutter. With a documentary approach and a fine-art touch, I capture stories, emotions, and character in every frame.",
+"Spesialisasi saya adalah fotografi hitam putih dan monokrom — menghilangkan warna agar cahaya, komposisi, dan ekspresi berbicara lebih lantang. Baik sesi photoshoot personal maupun foto brand & produk, setiap klien mendapat perhatian penuh dari konsep hingga hasil akhir.":"I specialize in black-and-white and monochrome photography, letting light, composition, and expression speak more clearly. From personal photoshoots to brand and product photography, every client receives dedicated attention from concept to final delivery.",
+"Foto Dihasilkan":"Photos Created","Pengalaman":"Experience","Dedikasi":"Dedication","Hubungi Saya":"Get in Touch",
+"Siap Membekaskan ":"Ready to Capture ","Momennya?":"Your Moments?","Ceritakan konsep dan tanggal yang kamu inginkan — konsultasi gratis, jawaban cepat.":"Tell me your concept and preferred date — free consultation and a quick response.",
+"No. HP / WhatsApp":"Phone / WhatsApp","Respon cepat via WhatsApp":"Quick response via WhatsApp","Untuk penawaran & kerja sama":"For inquiries & collaborations","Lihat karya & behind the scene":"Explore the work & behind the scenes",
+"Booking Jadwal Photoshoot":"Book a Photoshoot","Chat WhatsApp":"Chat on WhatsApp","Melayani sesi studio & lokasi luar ruangan":"Studio and outdoor sessions available",
+"Seluruh hak cipta dilindungi.":"All rights reserved.","Lihat Karya Lengkap di Instagram @rioalgifar":"View the Full Portfolio on Instagram @rioalgifar",
+"Photoshoot":"Photoshoot","Brand":"Brand"
+};
+let lang='id';
+const nodes=[];
+const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+while(walker.nextNode()){let n=walker.currentNode, t=n.nodeValue.trim(); if(translations[t]) nodes.push([n,t]);}
+function setLang(l){lang=l;document.documentElement.lang=l;nodes.forEach(([n,t])=>n.nodeValue=lang==='en'?translations[t]:t);
+document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));
+}
+document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+})();
+</script>
+
+</body>
+</html>
